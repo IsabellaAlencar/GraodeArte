@@ -1,14 +1,9 @@
 @import "./variables.css";
-@import "./reset.css";
-
 
 
 .header {
-    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: var(--color-bg-card);
     background-color: var(--color-primary-hover);
     border-bottom: 2px solid ;
 
@@ -25,11 +20,22 @@
     align-items: center;
 }
 
-
-.header__title {
+.header__title{
     color: var(--color-header-text);
+
+}
+
+
+.section__title {
+    color: var(--color-header-bg);
     
 }
+
+.section__text {
+    color: var(--color-text-muted);
+
+}
+
 
 .nav__list {
     display: flex;
@@ -40,8 +46,7 @@
         }
 
 .nav__item {
-    flex: 1 1 calc(33.333% - 6px);
-    text-align: center;
+    display: flex;
         }
 
 
@@ -54,18 +59,25 @@
     color: var(--color-header-text);
     position: relative;
     background-color: transparent;
-    transition: color 0.3s ease, background-color 0.3 ease, transform 0.2s ease;
 }
 
 
-
-
-.section-1{
-    height: var(--section-height);
-    min-height: 500px;
+.section__container{
     display: flex;
-    padding: 0 5%;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
 }
+
+.section__content{
+    
+    flex: 1
+
+}
+
+
+
 
 
 
