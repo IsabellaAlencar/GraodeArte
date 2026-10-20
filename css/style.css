@@ -45,6 +45,19 @@
     transition: var(--transition);
 }
 
+.img {
+    max-width: 60rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+    object-fit: cover;
+    margin-left: auto;
+    float: right;
+    width: 300%;
+}
+
+
+
+
 
 .section {
     width: 100%;
@@ -53,10 +66,11 @@
 
 }
 
-.section__container {
+
+.section__container{
     display: flex;
-    gap: 16px;
-    align-items: center;
+    gap: 25px;
+    text-align: right;
 }
 
 .section__content {
@@ -72,7 +86,7 @@
 .section__text {
     max-width: 80rem;
     margin: 0 auto 3rem;
-    text-align: center;
+    text-align: left;
 }
 
 .faq__item {

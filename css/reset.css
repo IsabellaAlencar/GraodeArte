@@ -16,15 +16,10 @@ body {
     line-height: 1.6;
     background-color: var(--color-bg-main);
     color: var(--color-text-body);
-
     padding-top: var(--header-height);
     padding-bottom: var(--footer-height);
 }
 
-img {
-    display: block;
-    max-width: 100%;
-}
 
 section {
     scroll-margin-top: var(--header-height);
