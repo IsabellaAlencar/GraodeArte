@@ -1,87 +1,97 @@
-@import "./variables.css";
+@import './variables.css';
+@import './reset.css';
 
 
 .header {
-    top: 0;
-    left: 0;
-    background-color: var(--color-primary-hover);
-    border-bottom: 2px solid ;
-
+    position: fixed;
+    width: 100%;
+    padding: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5%;
-    z-index: 1000;
-    backdrop-filter: blur(12px);
-}
-
-.header__brand {
-    display: flex;
-    align-items: center;
-}
-
-.header__title{
+    gap: 2rem;
+    background-color: var(--color-header-bg);
     color: var(--color-header-text);
-
 }
 
 
-.section__title {
-    color: var(--color-header-bg);
-    
+.header__title {
+    color: var(--color-header-text);
+    font-family: var(--font-title);
+    font-size: 2rem;
 }
 
-.section__text {
-    color: var(--color-text-muted);
-
+.nav{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 
 .nav__list {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    gap: 4px;
-    padding: 4px;
-        }
-
-.nav__item {
-    display: flex;
-        }
-
+    gap: 2rem;
+    flex-wrap: wrap;
+    list-style: none;
+}
 
 .nav__link {
+    color: var(--color-header-text);
     font-size: var(--font-size-sm);
     font-weight: 600;
-    padding: 10px 18px;
-
-    border-radius: var(--radius-sm);
-    color: var(--color-header-text);
-    position: relative;
-    background-color: transparent;
+    text-decoration: none;
+    transition: var(--transition);
 }
 
 
-.section__container{
-    display: flex;
-    align-items: center;
-    gap: 40px;
+.section {
     width: 100%;
-    max-width: 1200px;
-}
-
-.section__content{
-    
-    flex: 1
+    padding: 20% 8%;
+    margin-top: var(--header-height);
 
 }
 
+.section__container {
+    align-items: center;
+    width: 100%;
+}
 
+.section__content {
+    flex: 1;
+}
 
+.section__title {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: clamp(2.4rem, 4vw, 5rem);
+}
 
+.section__text {
+    max-width: 80rem;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
 
+.faq__item {
+    padding: 2rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-card);
+}
 
+.faq__summary {
+    color: var(--color-primary);
+    font-weight: 700;
+}
 
+.footer {
+    background-color: var(--color-header-bg);
+    color: var(--color-header-text);
+    text-align: center;
+    font-size: var(--font-size-sm);
+}
 
 
 
